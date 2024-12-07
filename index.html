@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Dashboard</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div></div>
+  <div class="sidebar">
+    <div class="company-logo">Company</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Users</a></li>
+      </ul>
+    </nav>
+    <div class="sign-out">
+      <a href="#">Sign out</a>
+    </div>
+  </div>
+
+  <main>
+    <header>
+      <div class="stats">
+        <div class="stat-item">12<br><span>People</span></div>
+        <div class="stat-item">5<br><span>Departments</span></div>
+        <div class="stat-item">0<br><span>Guests</span></div>
+      </div>
+    </header>
+
+    <section class="user-management">
+      <div class="actions">
+        <input type="text" placeholder="Search" class="search-bar">
+        <select class="filter">
+          <option>All</option>
+        </select>
+        <select class="filter">
+          <option>All Departments</option>
+        </select>
+        <button class="invite-button">Invite</button>
+      </div>
+
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>User</th>
+            <th>Status</th>
+            <th>Phone Number</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Andrew Bojangles</td>
+            <td>Active</td>
+            <td>+79000010101</td>
+            <td>Designer</td>
+            <td>Pride 1</td>
+            <td>2 days ago</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

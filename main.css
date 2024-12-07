@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .company-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a.active {
+    color: #4a90e2;
+    font-weight: bold;
+  }
+  
+  .sign-out a {
+    text-decoration: none;
+    color: #f00;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .stat-item {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .stat-item span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar, .filter {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .invite-button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background: #f4f4f4;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }  
+
+  /*main.html*/
