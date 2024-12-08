@@ -5,49 +5,40 @@ body {
   }
   
   .sidebar {
-    width: 250px;
-    background: #f4f4f4;
+    width: 150px ;
+    height: 100vh;
+    background: #00000064;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   
   .company-logo {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  nav ul li a {
+  nav  a {
+    background: #402ad3;
     text-decoration: none;
-    color: #333;
-  }
-  
-  nav ul li a.active {
-    color: #4a90e2;
-    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #ffffff;
   }
   
   .sign-out a {
+    position: relative;
+    bottom: -700px;
     text-decoration: none;
-    color: #f00;
+    color: rgb(69, 61, 61);
   }
   
   main {
     flex-grow: 1;
     padding: 20px;
   }
-  
+  /* main */
   .stats {
     display: flex;
     justify-content: space-around;
@@ -56,8 +47,8 @@ body {
   
   .stat-item {
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 100px;
+    font-weight:lighter;
   }
   
   .stat-item span {
@@ -68,28 +59,40 @@ body {
   
   .actions {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
     margin-bottom: 20px;
+    gap: 3vh;
   }
   
   .search-bar, .filter {
-    padding: 5px 10px;
+    
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
   }
-  
+  .search-bar {
+    width: 100%;
+  }
   .invite-button {
     background: #4a90e2;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1vh;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 65px;
+    border-radius: 10px;
     cursor: pointer;
+  }
+
+  .bx-user-plus {
+    font-size: large;
   }
   
   .user-table {
     width: 100%;
     border-collapse: collapse;
+    
   }
   
   .user-table th, .user-table td {
@@ -97,13 +100,24 @@ body {
     padding: 10px;
     text-align: left;
   }
-  
+
   .user-table th {
     background: #f4f4f4;
   }
   
   .user-table tr:nth-child(even) {
     background: #f9f9f9;
-  }  
+  } 
 
-  /*main.html*/
+.avatar {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 25px;
+    border: 2px solid #00000064;
+  }
+
+  .avatar__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+  }
